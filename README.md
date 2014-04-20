@@ -11,9 +11,16 @@ Each message type requires its own specific data to be passed through in the con
 
 ### Usage
 
-See the Exercisor test class for usage of the dispatcher.
+The important work is in the [Dispatcher](https://github.com/danmidwood/lambda-ctor-dispatch/blob/master/src/main/java/com/danmidwood/lambdactor/Dispatcher.java) class.
+
+```java
+new Dispatcher().dispatch(3, "dan", 10, true) // returns Message3
+```
+
+See the [Exercisor](https://github.com/danmidwood/lambda-ctor-dispatch/blob/master/src/test/java/com/danmidwood/lambdactor/Exercisor.java) test class for usage of the dispatcher.
 
 ### License
 
 GPL v3
+
 Copyright 2014 Dan Midwood
